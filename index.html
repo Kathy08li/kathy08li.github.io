@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>V V N D LLC — Business & Technical Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --green-dark: #0f3d2e;
+            --green-main: #1f7a5c;
+            --green-light: #4caf8f;
+            --green-accent: #8cffc2;
+            --white: #f4fff9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--green-dark);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 100px 8%;
+        }
+
+        h1, h2, h3 {
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 17px;
+            opacity: 0.95;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--green-dark), var(--green-main));
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 720px;
+        }
+
+        .money-icons {
+            margin-top: 30px;
+            font-size: 32px;
+        }
+
+        /* ABOUT */
+        .about {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 20px;
+            filter: grayscale(10%) contrast(1.1);
+        }
+
+        /* SERVICES */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.06);
+            padding: 35px;
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .card span {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* PROCESS */
+        .process {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .step {
+            border-left: 4px solid var(--green-accent);
+            padding-left: 25px;
+        }
+
+        /* CONTACT */
+        .contact {
+            min-height: 100vh;
+            background: linear-gradient(160deg, var(--green-main), var(--green-dark));
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .contact form {
+            background: rgba(255,255,255,0.08);
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: none;
+            background: rgba(255,255,255,0.15);
+            color: var(--white);
+        }
+
+        button {
+            background: var(--green-accent);
+            color: var(--green-dark);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 40px 8%;
+            background: #08261c;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 900px) {
+            .about, .cards, .process, .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 1. HERO -->
+<section class="hero">
+    <div>
+        <h1>V V N D LLC</h1>
+        <p>
+            Strategic business management, administrative optimization, and technical consulting designed for companies
+            that operate in complex, fast-moving environments. We help organizations structure decisions, control costs,
+            and turn operational challenges into measurable financial outcomes.
+        </p>
+        <div class="money-icons">💰 💵 💲</div>
+    </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section>
+    <div class="about">
+        <div>
+            <h2>Who We Are & Why We Exist</h2>
+            <p>
+                V V N D LLC is a U.S.-based consulting firm focused on improving how businesses are managed,
+                supported, and scaled. We work with leadership teams that need clarity across operations,
+                administration, and technical decision-making.
+            </p>
+            <p>
+                Our approach combines financial logic, structured processes, and practical execution.
+                We don’t deliver abstract presentations — we build systems that teams can actually run.
+            </p>
+            <p>
+                From internal workflows to technical advisory, our role is to remove friction,
+                improve control, and support long-term profitability.
+            </p>
+        </div>
+        <img src="https://media.istockphoto.com/id/2188043436/photo/cheerful-mid-adult-man-smiling-and-talking-to-four-business-colleagues-in-meeting.webp?a=1&b=1&s=612x612&w=0&k=20&c=0IPdJgS6offLtuJZd6weLiDMkezjPbNeHcTxJrfcAdY=" alt="Business Team">
+    </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section>
+    <h2>What We Actually Do</h2>
+    <div class="cards">
+        <div class="card">
+            <span>💰</span>
+            <h3>Business Management Consulting</h3>
+            <p>
+                We analyze decision-making structures, cost control, and performance metrics.
+                Our goal is to align strategy with daily operations and financial reality.
+                This results in clearer accountability and stronger profit discipline.
+            </p>
+        </div>
+
+        <div class="card">
+            <span>💵</span>
+            <h3>Administrative & Support Services</h3>
+            <p>
+                We optimize administrative systems, reporting flows, and internal coordination.
+                This reduces overhead, improves transparency, and supports executive focus.
+                Administration becomes a support tool — not a bottleneck.
+            </p>
+        </div>
+
+        <div class="card">
+            <span>💲</span>
+            <h3>Technical Consulting Services</h3>
+            <p>
+                We advise on technical processes, system selection, and operational feasibility.
+                Our consulting connects technical decisions to business impact.
+                Technology is evaluated as an investment, not a trend.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. ADVANTAGES -->
+<section>
+    <h2>Why Clients Choose V V N D</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Financially Grounded Thinking</h3>
+            <p>
+                Every recommendation is evaluated through cost, risk, and return.
+                We focus on sustainability rather than short-term fixes.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Clear, Structured Execution</h3>
+            <p>
+                Our work is practical, documented, and implementable.
+                Clients receive clarity, not complexity.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cross-Functional Perspective</h3>
+            <p>
+                We operate between management, administration, and technology.
+                This allows us to see problems others miss.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. PROCESS -->
+<section>
+    <h2>How We Work</h2>
+    <div class="process">
+        <div class="step">
+            <h3>1. Assessment</h3>
+            <p>
+                We review current structures, costs, workflows, and constraints.
+                The focus is on identifying leverage points.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>2. Strategy Design</h3>
+            <p>
+                We design practical solutions aligned with financial and operational goals.
+                Every step is measurable.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>3. Support & Alignment</h3>
+            <p>
+                We assist with implementation and internal alignment.
+                Results are tracked and refined.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. CONTACT -->
+<section class="contact">
+    <div>
+        <h2>Let’s Start a Focused Conversation</h2>
+        <p>
+            If your organization needs stronger control, clearer processes,
+            or better alignment between operations and financial outcomes —
+            reach out to us.
+        </p>
+        <p>
+            📧 team@vvnd.org<br>
+            📍 7739 Melrose Ave, Rosemead, CA, 91770
+        </p>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Tell us about your business challenge"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 V V N D LLC. Business Management, Administrative & Technical Consulting. All rights reserved.
+</footer>
+
+</body>
+</html>
